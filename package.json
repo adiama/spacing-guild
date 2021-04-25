@@ -1,0 +1,18 @@
+{
+  "name": "spacing-guild",
+  "version": "0.0.0",
+  "description": "A collection of modules for spacetraders.io",
+  "type": "module",
+  "main": "dist/index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^4.2.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc --build tsconfig.json",
+    "test:mock": "node --experimental-json-modules ./tests/test.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
