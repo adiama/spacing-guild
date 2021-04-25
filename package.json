@@ -1,6 +1,6 @@
 {
   "name": "spacing-guild",
-  "version": "0.0.0",
+  "version": "1.0.0-alpha.1",
   "description": "A collection of modules for spacetraders.io",
   "type": "module",
   "main": "dist/index.js",

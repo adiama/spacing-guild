@@ -132,18 +132,18 @@ export class Mentat {
 
     /**
      * 
-     * Sidenote: For different floor methods
-     * https://stackoverflow.com/questions/38702724/math-floor-vs-math-trunc-javascript
-     * 
      * @param good IGood
-     * @param ship IShip
+     * @param amount number
      * @returns number
      */
-    public static calculateCargoVolume(good: IGood, ship: IShip): number {
-        return Math.floor(ship.spaceAvailable / good.volumePerUnit);
+    public static calculateCargoVolume(good: IGood, amount: number): number {
+        return amount * good.volumePerUnit;
     }
 
     /**
+     * 
+     * Sidenote: For different floor methods
+     * https://stackoverflow.com/questions/38702724/math-floor-vs-math-trunc-javascript
      * 
      * @param space number
      * @param volumePerUnit number
@@ -221,6 +221,8 @@ export class Mentat {
     }
 
     /**
+     * 
+     * TODO: Move this to a helper class. Mentat only does calculations and verifications.
      * 
      * @param arr any[]
      * @param key string
