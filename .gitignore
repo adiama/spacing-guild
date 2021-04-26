@@ -1,3 +1,5 @@
 node_modules
 dist
+lib-esm
+_bundles
 .vscode
