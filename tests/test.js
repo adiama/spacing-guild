@@ -1,5 +1,6 @@
 import * as jsonData from "../mock_data/data.json";
-import { Navigator as GuildNavigator } from "../dist/navigator.js";
+import { Navigator as GuildNavigator } from "../dist/index.js";
+// import * as SpacingGuild from "../dist/index.js";
 
 const data = jsonData.default;
 

@@ -20,8 +20,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "test:mock": "node --experimental-json-modules ./tests/test.js",
-    "build": "npm run clean && npm run build:dist",
-    "build:dist": "npx tsc --build tsconfig.json",
+    "build": "npm run clean && npx tsc --build tsconfig.json",
+    "build:source": "npx tsc --build tsconfig.json --inlineSourceMap",
     "clean": "shx rm -rf _bundles dist lib-esm"
   },
   "license": "ISC",

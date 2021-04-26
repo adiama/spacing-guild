@@ -30,11 +30,13 @@ A library of useful features for [SpaceTraders API](https://spacetraders.io/)
 
 ### Using Navigator
 
-```javascript
-import { Navigator } from "spacing-guild";
+```typescript
+import { Navigator, ITradeRoute } from "spacing-guild";
 
-const edric = new Navigator(locations, ship);
-const route = edric.navigate();
+// ...
+
+const edric: Navigator = new Navigator(locations, ship);
+const route: ITradeRoute = edric.navigate();
 ```
 
 Example result
@@ -53,11 +55,13 @@ Example result
 
 ### Using Mentat
 
-```javascript
+```typescript
 import { Mentat } from "spacing-guild";
 
-const distance = Mentat.calculateLocationDistance(locationA, locationB);
-const inRange = Mentat.validateRange(ship, range, location);
+// ...
+
+const distance: number = Mentat.calculateLocationDistance(locationA, locationB);
+const inRange: number = Mentat.validateRange(ship, range, location);
 ```
 
 ---
