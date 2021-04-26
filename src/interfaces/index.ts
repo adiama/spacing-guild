@@ -40,7 +40,7 @@ export interface IShip {
 }
 
 export interface ITradeRoute {
-    destination: ILocation;
+    destination: string;
     cargo: ICargo[];
 }
 

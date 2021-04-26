@@ -270,8 +270,8 @@ export class Navigator {
             remainingSpace -= goodVolume;
         }
             
-        // Finally, return the object containing the destination and the cargo-to-buy for trading
-        return { destination, cargo };
+        // Finally, return the object containing the destination symbol and the cargo-to-buy for trading
+        return { destination: destination.symbol, cargo };
     }
 
     /**
