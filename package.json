@@ -1,7 +1,7 @@
 {
   "name": "spacing-guild",
-  "version": "1.0.0-alpha.1",
-  "description": "A collection of modules for spacetraders.io",
+  "version": "1.0.0-alpha.0",
+  "description": "A collection of features for spacetraders.io",
   "repository": {
     "type": "git",
     "url": "https://github.com/adiama/spacing-guild"
@@ -11,18 +11,13 @@
   "types": "dist/index.d.js",
   "dependencies": {},
   "devDependencies": {
-    "awesome-typescript-loader": "^5.2.1",
     "shx": "^0.3.3",
-    "typescript": "^4.2.4",
-    "webpack": "^5.35.1",
-    "webpack-cli": "^4.6.0"
+    "typescript": "^4.2.4"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "test:mock": "node --experimental-json-modules ./tests/test.js",
-    "build": "npm run clean && npx tsc && npm run build:lib-esm && npm run build:webpack",
-    "build:lib-esm": "npx tsc -m es6 --outDir lib-esm",
-    "build:webpack": "npx webpack",
+    "build": "npm run clean && npm run build:dist",
     "build:dist": "npx tsc --build tsconfig.json",
     "clean": "shx rm -rf _bundles dist lib-esm"
   },
