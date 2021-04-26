@@ -6,9 +6,12 @@
     "type": "git",
     "url": "https://github.com/adiama/spacing-guild"
   },
+  "homepage": "https://github.com/adiama/spacing-guild#readme",
+  "issues": "https://github.com/adiama/spacing-guild/issues",
   "author": "Alexandros Diamantonis",
   "main": "dist/index.js",
   "types": "dist/index.d.js",
+  "type": "module",
   "dependencies": {},
   "devDependencies": {
     "shx": "^0.3.3",
