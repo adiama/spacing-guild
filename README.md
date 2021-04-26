@@ -41,28 +41,7 @@ Example result
 
 ```json
 {
-  "destination": {
-    "symbol": "OE-PM",
-    "type": "PLANET",
-    "name": "Prime",
-    "x": 20,
-    "y": -25,
-    "allowsConstruction": false,
-    "marketplace": [
-      [Object],
-      [Object],
-      [Object],
-      [Object],
-      [Object],
-      [Object],
-      [Object],
-      [Object],
-      [Object],
-      [Object],
-      [Object],
-      [Object]
-    ]
-  },
+  "destination": "OE-PM",
   "cargo": [
     { "good": "FUEL", "quantity": 3, "totalVolume": 3 },
     { "good": "METALS", "quantity": 10, "totalVolume": 10 },
